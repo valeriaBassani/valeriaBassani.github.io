@@ -1,0 +1,245 @@
+@font-face {
+    font-family: TT Chocolates Trial Medium;
+    src: url(tt_chocolates/TT\ Chocolates\ Trial\ Medium.otf);
+}
+
+@font-face {
+    font-family: TT Chocolates Trial Extra-Ligth;
+    src: url(tt_chocolates/TT\ Chocolates\ Trial\ ExtraLight.otf);
+}
+
+@font-face {
+    font-family: TT Chocolates Trial Ligth;
+    src: url(tt_chocolates/TT\ Chocolates\ Trial\ Light.otf);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: TT Chocolates Trial Medium;
+}
+
+h2{
+    font-family: TT Chocolates Trial Extra-Ligth;
+}
+p{
+    font-family: TT Chocolates Trial Ligth;
+}
+
+a{
+    text-decoration: none;
+    font-family: TT Chocolates Trial Extra-Ligth;
+    color: black;
+}
+
+
+a:hover{
+    font-family: TT Chocolates Trial Medium;
+}
+
+label{
+    font-family: TT Chocolates Trial Extra-Ligth;
+}
+
+input{
+    width: 40vh;
+    border: none;
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+    margin-bottom: 4vh;
+}
+
+input[type=submit] {
+    width: 15vh;
+    height: 5vh;
+    border: solid 2px;
+    border-color: rgb(173, 53, 77);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 3vh;
+}
+
+.decor{
+    width: 40vh;
+    height: 40vh;
+    background-color: rgba(221, 97, 58, 0.24);
+    position: absolute;
+    border-radius: 100%;
+    filter: blur(80px);
+    left: 15vh;
+    top: 20vh;
+}
+
+.title button{
+    position:relative;
+    left: 15vh;
+}
+button{
+    width: 15vh;
+    height: 5vh;
+    border: solid 2px;
+    border-color: rgba(173, 53, 77, 0.38);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 100px;
+}
+
+.header{
+    height: 10vh;
+    padding: 2vh 2vh 2vh 2vh;
+}
+
+.home{
+    height: 90vh;
+}
+
+.dot{
+    width: 3vh ;
+    height: 3vh ;
+    border: 5px solid;
+    border-color: rgba(173, 53, 77, 0.38);
+    border-radius: 100vh;
+}
+
+.active{
+    border-color: #AD354D;
+    font-family: TT Chocolates Trial Medium;
+}
+
+span{
+    width: 0.5vh;
+    height: 10vh;
+    background-color: rgba(173, 53, 77, 0.38);
+}
+
+.title{
+    width: 60vh;
+}
+
+.progetto{
+    padding: 0vh 0vh 0vh 10vh;
+    width: 110vh;
+    height: 50vh;
+    background-color: rgba(221, 97, 58, 0.24);
+}
+.progetto p{
+    margin: 0;
+}
+
+.progetto img{
+    position: relative;
+    top: -2vh;
+    left: 20vh;
+    width: 60vh;
+    height: 40vh;
+    box-shadow: 5px 10px 10px #00000071;
+    z-index: 2;
+}
+
+.video{
+    position: relative;
+    top: -2vh;
+    left: 20vh;
+    width: 57vh;
+    height: 35vh;
+    box-shadow: 5px 10px 10px #00000071;
+    z-index: 2;
+    overflow: hidden;
+}
+
+video{
+    width: 70vh;
+    height: 45vh;
+}
+
+.number h1{
+    position: relative;
+    left: 10vh;
+    font-size: 20vh;
+    font-weight: 900;
+    margin: 0%;
+    color: rgba(251, 183, 163, 0.731);
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25vh;
+    gap: 1vh;
+}
+
+.smart{
+    display: none;
+}
+
+.tag{
+    height: 3.5vh;
+    width: auto;
+    padding: 0vh 3.5vh 0vh 3.5vh;
+}
+
+.tag p{
+    font-size: medium;
+}
+
+.progetto a{
+    text-decoration: underline;
+    text-decoration-thickness: 0.1vh;
+    text-underline-offset: 0.5vh ;
+    font-weight: 800;
+}
+
+.contatti{
+    height: 70vh;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .tags{
+        width: 50vh;
+        margin-bottom: 4vh
+    }
+    #home{
+        height: 100vh;
+    }
+
+    .smart{
+        display: block;
+        display: flex;
+    }
+
+    .desk{
+        display: none;
+    }
+
+    .home{
+        width: 80vh;
+    }
+   
+    .barra{
+        display: none;
+    }
+
+    .contatti{
+        height: 90vh;
+    }
+
+    .progetto2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2vh 0vh 0vh 0vh;
+        width: 90vh;
+        height: 85vh;
+        background-color: rgba(221, 97, 58, 0.24);
+    }
+
+    .progetto2 img{
+        width: 50vh;
+        height: 30vh;
+    }
+
+    
+
+}
